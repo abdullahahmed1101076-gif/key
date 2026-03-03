@@ -1,0 +1,32 @@
+# to generate the key
+
+```jsx
+ssh-keygen -t rsa -b 4096 -C "your_email@eample.com"
+```
+
+```jsx
+ssh-keygen -t ed25519 -C "[your_email@example.com](mailto:your_email@example.com)"
+```
+
+---
+
+---
+
+# to read the key
+
+```jsx
+cat ~/.ssh/id.rsa.pub
+```
+
+---
+
+---
+
+# to get the key in cmd
+
+```jsx
+ssh -T git@github.com
+```
+
+> `-T` → Disable pseudo-terminal allocation (used because GitHub doesn't give shell access)
+>
